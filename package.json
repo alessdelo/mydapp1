@@ -7,10 +7,10 @@
   "license": "ISC",
   "engines": {
       "node": "8.9.2"
-  }
+  },
   "scripts": {
     "start": "node helloworld.js"
-  }
+  },
   "dependencies": {
     "express": "^4.15.2"
   }
