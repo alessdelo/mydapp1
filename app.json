@@ -1,0 +1,7 @@
+{
+  "name": "delo-heroku-github-mobile-test",
+  "description": "This is a test for a basic node app made only online from mobile that synchronizes Heroku and Github",
+  "keywords": [ "test", "heroku", "github"],
+  "repository": "https://github.com/alessdelo/delo-heroku-github-mobile-test",
+  "image": "heroku/nodejs"
+}
