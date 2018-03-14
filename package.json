@@ -9,7 +9,7 @@
       "node": "8.9.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index1.js"
   },
   "dependencies": {
     "express": "^4.15.2",
