@@ -13,6 +13,7 @@
     "start": "node index1.js"
   },
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.15.2",
     "path": "^0.12.7"
   }
