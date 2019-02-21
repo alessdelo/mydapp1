@@ -1,4 +1,5 @@
 const express = require('express')
+const Web3 = require('web3')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
