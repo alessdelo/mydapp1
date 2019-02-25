@@ -11,8 +11,10 @@ const infuraRinkebyKey = process.env.INFURA_RINKEBY_KEY
 
 // connect to Infura node
 // Ropsten
-// const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/' + infuraKey))
+// const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/' + infuraRopstenKey))
 // Rinkeby
+const web3 = new Web3(new Web3.providers.HttpProvider('https://rinkeby.infura.io/v3/' + infuraRinkebyKey))
+
 
 express()
   .use('/static', express.static(path.join(__dirname, 'public')))
