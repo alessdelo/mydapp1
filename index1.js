@@ -4,9 +4,15 @@ const PORT = process.env.PORT || 5000
 
 const Web3 = require('web3')
 // retrieves infura key from Heroku constants
-const infuraKey = process.env.INFURA_ROPSTEN_KEY
+// Ropsten
+// const infuraRopstenKey = process.env.INFURA_ROPSTEN_KEY
+// Rinkeby
+const infuraRinkebyKey = process.env.INFURA_RINKEBY_KEY
+
 // connect to Infura node
-const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/' + infuraKey))
+// Ropsten
+// const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/' + infuraKey))
+// Rinkeby
 
 express()
   .use('/static', express.static(path.join(__dirname, 'public')))
