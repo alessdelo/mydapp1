@@ -111,14 +111,17 @@
         alert(web3.eth.defaultAccount);
 	alert('ccc');
 	
-        /*
+      
 	
         // setta l'ABI ( dello smart contract preso dall'IDE Remix - Compile > Details > copiare l'ABI
         var Example1Contract =web3.eth.contract(abi);
-           
+	
+            /* 
        
         // setta l'address dello smart contrat - copiato dall'IDE Remix - Run > cliccare sul pulsante Create > 
-        var Example1 = Example1Contract.at(smartContractAddress);   
+        // var Example1 = Example1Contract.at(smartContractAddress);
+	var Example1 = Example1Contract.at(web3.eth.defaultAccount);
+	
         
         console.log(Example1);
         
