@@ -7,12 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>TEST heroku + github + node + express</title>
-
-
-
+    <link rel="stylesheet" type="text/css" href="static/stylesheets/main.css">
     
+    <title>TEST heroku + github + node + express</title>
 
 </head>
 <body>
@@ -25,6 +22,8 @@
 		<h2 id="instructor"></h2>
 		<h3 id="address"></h3>
 				
+		<!--
+		
 		<form>
 		
 		  <div class="form-group">
@@ -41,6 +40,18 @@
 		  <button type="submit" id="button" class="btn btn-primary">Update Instructor</button>
 		  
 		</form>
+		
+		-->
+		
+		<form>
+			<label for="name" class="col-lg-2 control-label">Instructor Name</label>
+			<input id="name" type="text">
+			<br/>
+			<label for="age" class="col-lg-2 control-label">Instructor Age</label>
+			<input id="age" type="text">
+
+			<button id="button">Update Instructor</button>
+ 		</form>
 
         </div>
     </div>
