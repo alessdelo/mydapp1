@@ -2,6 +2,8 @@ const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
+const smartContractAddress = process.env.WALLET_ADDRESS
+
 const Web3 = require('web3')
 // retrieves infura key from Heroku constants
 // Ropsten
