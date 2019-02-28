@@ -123,10 +123,10 @@
 	var Example1 = Example1Contract.at(web3.eth.defaultAccount);
 	
         
-	 alert(Example1);
+	 printObject(Example1);
         console.log(Example1);
 	
-	 /* 
+	  
         
         // al caricamento della pagina, attraverso Web3, si connette allo smart contract "Example1"
         // ed estrae i valori dalla funzione getInstructor() dello smart contract stesso 
@@ -141,6 +141,8 @@
                     alert(error);
             }
         });
+	
+	/*
              
         // al click del pulsante di invio, attraverso Web3, si connette allo smart contract "Example1"
         // ed inserisce i valori nella funzione setInstructor() dello smart contract stesso
