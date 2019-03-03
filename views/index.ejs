@@ -108,7 +108,7 @@
             // imposta come account di default il primo dei 10 indirizzi estratti nel  prompt con"testrpc" 
          web3.eth.defaultAccount = web3.eth.accounts[0];
 	 alert('bbb');
-        alert(web3.eth.defaultAccount);
+        alert("web3.eth.defaultAccount: " + web3.eth.defaultAccount);
 	alert('ccc');
 	
       
@@ -123,7 +123,7 @@
 	var Example1 = Example1Contract.at(web3.eth.defaultAccount);
 	
         
-	 printObject(Example1);
+	 printObject("Example1: " + Example1);
         console.log(Example1);
 	
 	  
