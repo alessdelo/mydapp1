@@ -51,7 +51,7 @@
                 
                 
             // set smart contract address
-            var smartContractAddress = "0xe13511d5127d882ca33890ce556790e173ff616f";
+            var smartContractAddress = "0x9a3883d3186226eE27ba90dC9065B7C73898232A";
             // copy ABI from Remix > Compile > Details 
 	       var abi = [
                         {
@@ -119,8 +119,8 @@
            
        
         // setta l'address dello smart contrat - copiato dall'IDE Remix - Run > cliccare sul pulsante Create > 
-        // var Example1 = Example1Contract.at(smartContractAddress);
-	var Example1 = Example1Contract.at(web3.eth.defaultAccount);
+        var Example1 = Example1Contract.at(smartContractAddress);
+	// var Example1 = Example1Contract.at(web3.eth.defaultAccount);
 	
         
 	 printObject("Example1: " + Example1);
