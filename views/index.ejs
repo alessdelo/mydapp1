@@ -132,8 +132,10 @@
         // ed estrae i valori dalla funzione getInstructor() dello smart contract stesso 
         // che restituisce un array di 2 valori: Name (string) e Age (uint)
         Example1.getInstructor(function(error, result) {
+	
+		result = result.toNumber();
             if(!error) {
-                $("#instructor").html('nome: '+ parseInt(result[0], 10) + ' - - eta: ' + result[1]); 
+                $("#instructor").html('nome: '+ result[0] + ' - - eta: ' + result[1]); 
                  console.log(result);
                 alert(result);
             } else {
