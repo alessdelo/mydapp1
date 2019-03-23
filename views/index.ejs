@@ -137,10 +137,10 @@
             if(!error) {
                 $("#instructor").html('nome: '+ result[0] + ' - - eta: ' + result[1]); 
                  console.log(result);
-                alert(result);
+                printObject(result);
             } else {
                   console.error(error);
-                    alert(error);
+                    printObject(error);
             }
         });
 	
