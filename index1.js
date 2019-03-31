@@ -15,7 +15,7 @@ const infuraRinkebyKey = process.env.INFURA_RINKEBY_KEY
 // Ropsten
 // const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/' + infuraRopstenKey))
 // Rinkeby
-const web3 = new Web3(new Web3.providers.HttpProvider('https://rinkeby.infura.io/v3/' + infuraRinkebyKey))
+const InfuraWeb3 = new Web3(new Web3.providers.HttpProvider('https://rinkeby.infura.io/v3/' + infuraRinkebyKey))
 
 
 express()
