@@ -17,7 +17,7 @@ const infuraRinkebyKey = process.env.INFURA_RINKEBY_KEY
 // Rinkeby
 // const InfuraWeb3 = new Web3(new Web3.providers.HttpProvider('https://rinkeby.infura.io/v3/' + infuraRinkebyKey))
 
-var index = 'pages/index2'
+var index = 'pages/index'
 var header = "../partials/header.ejs"
 var nav = "../partials/nav.ejs"
 var footer = "../partials/footer.ejs"
