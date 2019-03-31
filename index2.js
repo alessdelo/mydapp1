@@ -54,7 +54,7 @@ var app = express()
 // ---------------------------------
 // dapp2
 
-app.get('/dapp2', (req, res) => res.render(index,pageData.dapp1))
+app.get('/dapp1', (req, res) => res.render(index,pageData.dapp1))
 
 // ---------------------------------
 // ---------------------------------
