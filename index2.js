@@ -24,7 +24,7 @@ var footer = "../partials/footer.ejs"
 
 
 var pageData = {
-  dapp2: {
+  dapp1: {
     title: "dapp1", 
     content:'../contents/dapp3.ejs',
     descr: 'empty.....',
