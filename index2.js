@@ -18,6 +18,16 @@ const infuraRinkebyKey = process.env.INFURA_RINKEBY_KEY
 // const InfuraWeb3 = new Web3(new Web3.providers.HttpProvider('https://rinkeby.infura.io/v3/' + infuraRinkebyKey))
 
 
+var pageData = {
+  dapp1: {
+    title: "dapp1", 
+    web3: Web3
+  },
+  dapp2: {
+    title:'dapp2',
+  }
+}
+
 express()
   .use('/static', express.static(path.join(__dirname, 'public')))
   .set('views', './views')
