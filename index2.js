@@ -19,12 +19,12 @@ const infuraRinkebyKey = process.env.INFURA_RINKEBY_KEY
 
 
 var pageData = {
-  dapp1: {
+  dapp2: {
     title: "dapp1", 
     web3: Web3
   },
-  dapp2: {
-    title:'dapp2',
+  dapp3: {
+    title:'dapp3',
   }
 }
 
@@ -37,7 +37,7 @@ var app = express()
 // ---------------------------------
 // dapp2
 
-app.get('/aframetour', (req, res) => res.render(index,pageData.aframetour))
+app.get('/dapp2', (req, res) => res.render(index2,pageData.dapp2))
 
 // ---------------------------------
 // ---------------------------------
