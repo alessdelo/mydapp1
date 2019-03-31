@@ -28,9 +28,9 @@ var pageData = {
   }
 }
 
-express()
-  .use('/static', express.static(path.join(__dirname, 'public')))
-  .set('views', './views')
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+var app = express()
+  app.use('/static', express.static(path.join(__dirname, 'public')))
+  app.set('views', './views')
+  app.set('view engine', 'ejs')
+  app.get('/', (req, res) => res.render('index'))
+  app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
