@@ -37,7 +37,7 @@ var app = express()
 // ---------------------------------
 // dapp2
 
-app.get('/dapp2', (req, res) => res.render(index2,pageData.dapp2))
+app.get('/dapp2', (req, res) => res.render('index2',pageData.dapp2))
 
 // ---------------------------------
 // ---------------------------------
