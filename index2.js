@@ -26,7 +26,7 @@ var footer = "../partials/footer.ejs"
 var pageData = {
   dapp1: {
     title: "dapp1", 
-    content:'../contents/dapp3.ejs',
+    content:'../contents/dapp1.ejs',
     descr: 'empty.....',
     nav: nav,
     header: header,
@@ -35,8 +35,8 @@ var pageData = {
     web3: Web3
   },
   dapp3: {
-    title:'dapp3',
-    content:'../contents/dapp3.ejs',
+    title:'dapp2',
+    content:'../contents/dapp2.ejs',
     descr: 'empty.....',
     nav: nav,
     header: header,
@@ -54,7 +54,7 @@ var app = express()
 // ---------------------------------
 // dapp2
 
-app.get('/dapp2', (req, res) => res.render(index,pageData.dapp2))
+app.get('/dapp2', (req, res) => res.render(index,pageData.dapp1))
 
 // ---------------------------------
 // ---------------------------------
