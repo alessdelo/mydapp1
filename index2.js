@@ -33,4 +33,14 @@ var app = express()
   app.set('views', './views')
   app.set('view engine', 'ejs')
   app.get('/', (req, res) => res.render('index'))
+
+// ---------------------------------
+// dapp2
+
+app.get('/aframetour', (req, res) => res.render(index,pageData.aframetour))
+
+// ---------------------------------
+// ---------------------------------
+// ---------------------------------
+
   app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
