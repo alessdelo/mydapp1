@@ -11,6 +11,8 @@ const Web3 = require('web3')
 // Rinkeby
 const infuraRinkebyKey = process.env.INFURA_RINKEBY_KEY
 
+const keytest = "myKeyTest"
+
 // connect to Infura node
 // Ropsten
 // const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/' + infuraRopstenKey))
@@ -31,8 +33,7 @@ var pageData = {
     nav: nav,
     header: header,
     footer: footer,
-    params: [],
-    web3: Web3
+    params: [keytest]
   },
   dapp3: {
     title:'dapp2',
