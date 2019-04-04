@@ -50,7 +50,7 @@ var app = express()
   app.use('/static', express.static(path.join(__dirname, 'public')))
   app.set('views', './views')
   app.set('view engine', 'ejs')
-  app.get('/dapp1', (req, res) => res.render('index'))
+  app.get('/', (req, res) => res.render('index'))
 
 // ---------------------------------
 // dapp2
