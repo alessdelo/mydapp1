@@ -35,7 +35,7 @@ var pageData = {
     footer: footer,
     params: [keytest, smartContractAddress, Web3]
   },
-  dapp3: {
+  dapp2: {
     title:'dapp2',
     content:'../contents/dapp2.ejs',
     descr: 'empty.....',
