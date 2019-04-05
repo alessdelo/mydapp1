@@ -4,9 +4,11 @@
 <% strMyVar = JSON.stringify(myVar, null, 4); %>
 <%= strMyVar %>
 <% var passEjs = strMyVar; %>
+<% var passWeb3 = MyVar[3]; %>
 
 <script>
 var getPassEjs = <%- passEjs %>;
+var getPassWeb3 = <%- passWeb3 %>;
 </script>
 
 <script type="text/javascript" src="/static/general.js"></script>
@@ -108,7 +110,7 @@ var getPassEjs = <%- passEjs %>;
       
       alert('i am ' + smartContractAddress);
         alert('const Web3');
-	printObject(Web3);
+	printObject(getPassWeb3);
         alert('passEjs');
 	printObject(getPassEjs);
 	alert('external web3');
