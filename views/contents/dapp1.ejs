@@ -4,13 +4,12 @@
 <% strMyVar = JSON.stringify(myVar, null, 4); %>
 <%= strMyVar %>
 <% var passEjs = strMyVar; %>
-<% var passMyVar= myVar; %>
+
 
 
 <script>
 var getPassEjs = <%- passEjs %>;
-var getMyVar = <%- passMyVar %>;
-printObject(getMyVar);
+alert(getPassEjs);
 </script>
 
 <script type="text/javascript" src="/static/general.js"></script>
