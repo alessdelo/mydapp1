@@ -1,3 +1,15 @@
+<% strMyVar = JSON.stringify(myVar, null, 4); %>
+<%= strMyVar %>
+<% var passEjs = strMyVar; %>
+<% var passWeb3 = MyVar[3]; %>
+
+<script>
+var getPassEjs = <%- passEjs %>;
+var getPassWeb3 = <%- passWeb3 %>;
+</script>
+
+-----------------------------------------
+
 index.ejs 28.02.2019
 ---------------------------
 
