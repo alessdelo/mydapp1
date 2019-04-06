@@ -4,12 +4,14 @@
 <% strMyVar = JSON.stringify(myVar, null, 4); %>
 <%= strMyVar %>
 <% var passEjs = strMyVar; %>
+<% var objMyVar = MyVar; %>
 
 
 
 <script>
 var getPassEjs = <%- passEjs %>;
-alert(getPassEjs);
+var getMyVar = <%- myVar %>;
+printObject(getMyVar);
 </script>
 
 <script type="text/javascript" src="/static/general.js"></script>
@@ -111,14 +113,14 @@ alert(getPassEjs);
       
       alert('i am ' + smartContractAddress);
         alert('const Web3');
-	// printObject(getPassWeb3);
+	printObject(getPassWeb3);
         alert('passEjs');
-	printObject(getMyVar);
+	
 	alert('external web3');
-	// printObject(getPassEjs[3]);
+	printObject(getPassEjs[3]);
         alert('aaa');
 	printObject('aaa');
-	// printObject(web3);
+	printObject(web3);
             // imposta come account di default il primo dei 10 indirizzi estratti nel  prompt con"testrpc" 
          web3.eth.defaultAccount = web3.eth.accounts[0];
 	 alert('bbb');
